@@ -1,119 +1,158 @@
-/* General body styles */
-body {
-  font-family: Arial, sans-serif;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f0f9; /* Light background */
+  color: #333;
   line-height: 1.6;
-  background-image: url('path/to/your/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-/* Header styles */
-header {
-  background: #333;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container {
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #9b59b6, #f39c12); /* Purple to Pink Gradient */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
 header h1 {
-  margin: 0;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  list-style-type: none;
   display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 1rem;
+  margin: 0 20px;
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
-/* Button styles */
+nav ul li a:hover {
+  color: #f3e5f5; /* Light Pink */
+}
+
+/* Section Styles */
+section {
+  padding: 50px 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #9b59b6; /* Purple */
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #f39c12; /* Pink */
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Button */
 .btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #333;
-  color: #fff;
+  background-color: #9b59b6;
+  color: white;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background: #555;
+  background-color: #8e44ad; /* Darker purple */
 }
 
-/* Section styles */
-section {
-  padding: 2rem 0;
+/* Project Section */
+.projects-section .project {
+  background-color: #f3e5f5; /* Light pink */
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-section#home {
-  background: #f4f4f4;
+.projects-section .project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-section#about {
-  background: #e0f7fa;
-  padding: 2rem 0;
+.projects-section .project h3 a {
+  color: #9b59b6;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-section#projects {
-  background-image: url('path/to/your/projects-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 2rem 0;
+.projects-section .project h3 a:hover {
+  color: #f39c12; /* Pink */
 }
 
-.project {
-  background: #e2e2e2;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer styles */
-footer {
-  background: #333;
-  color: #fff;
+/* Video Section */
+.video-section {
+  background-color: #9b59b6; /* Purple */
+  color: white;
+  padding: 40px 0;
   text-align: center;
-  padding: 1rem 0;
+  border-radius: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  header .container {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  nav ul {
-      flex-direction: column;
-  }
-
-  nav ul li {
-      margin: 0.5rem 0;
-  }
-
-  .container {
-      padding: 0 0.5rem;
-  }
+.video-section video {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
 }
+
+/* Contact Section */
+.contact-section {
+  background-color: #f3e5f5; /* Light pink */
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.contact-section a {
+  color: #9b59b6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-section a:hover {
+  color: #f39c12; /* Pink */
+}
+
+/* Footer */
+footer {
+  background-color: #9b59b6;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border
